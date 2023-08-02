@@ -1,0 +1,15 @@
+Importing images from the public folder requires width and height (Recommended)
+  <Image src="/logo.png" width={15} height={15} alt="" />
+Or you can just fill the image in the nearest relative container
+  <Image src="/logo.png" fill={true} alt="" />
+
+Importing images as a component doesn't require width and height
+  <Image src={HeroImg} alt="" />
+
+Next.js doesn't allow to use any external images from other domains
+If you want to add an external image you need to write it in configuration file next.config.js
+  const nextConfig = {
+    images: {
+      domains: ["images.pexels.com"],
+    },
+  };

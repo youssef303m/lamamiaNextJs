@@ -40,7 +40,7 @@ const links = [
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      <Link href="" className={styles.logo}>
+      <Link href="/" className={styles.logo}>
         lamamia
       </Link>
       <div className={styles.links}>
