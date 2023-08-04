@@ -13,3 +13,6 @@ If you want to add an external image you need to write it in configuration file 
       domains: ["images.pexels.com"],
     },
   };
+
+If you're using context api the component should be a client side
+  "use client"
