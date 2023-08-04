@@ -8,10 +8,16 @@ const DarkModeToggle = () => {
   const { toggle, mode } = useContext(ThemeContext);
   return (
     <div className={styles.container} onClick={toggle}>
-      <div className={styles.icon} style={mode === "light" && { opacity: 0 }}>
+      <div
+        className={styles.icon}
+        style={mode === "dark" ? { opacity: "1" } : { opacity: "0" }}
+      >
         🌙
       </div>
-      <div className={styles.icon} style={mode === "dark" && { opacity: 0 }}>
+      <div
+        className={styles.icon}
+        style={mode === "dark" ? { opacity: "0" } : { opacity: "1" }}
+      >
         ☀️
       </div>
       <div
